@@ -14,6 +14,7 @@ import {
 import { Logo } from '@choc-ui/logo';
 import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const bg = useColorModeValue('white', 'gray.800');
@@ -40,7 +41,9 @@ export default function Header() {
               display={{ base: 'none', md: 'inline-flex' }}>
               <Button variant="ghost">Features</Button>
               <Button variant="ghost">About</Button>
-              <Button variant="ghost">Sign in</Button>
+              <Link to="/login">
+                <Button variant="ghost">Login</Button>
+              </Link>
             </HStack>
             <Button colorScheme="brand" size="sm">
               Get Started
