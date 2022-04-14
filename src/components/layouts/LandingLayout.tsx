@@ -1,7 +1,8 @@
+import { Container, Flex } from '@chakra-ui/react';
 import React from 'react';
-import { Flex, Container } from '@chakra-ui/react';
-import Header from './Header';
+
 import Footer from './Footer';
+import Header from './Header';
 
 export default function LandingLayout(props: React.PropsWithChildren<{}>) {
   return (
