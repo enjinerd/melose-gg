@@ -1,14 +1,7 @@
-import LandingLayout from './components/layouts/LandingLayout';
-import Hero from './components/landing/Hero';
-import Features from './components/landing/Features';
+import AppRouter from './routes';
 
 function App() {
-  return (
-    <LandingLayout>
-      <Hero />
-      <Features />
-    </LandingLayout>
-  );
+  return <AppRouter />;
 }
 
 export default App;
